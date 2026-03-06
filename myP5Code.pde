@@ -2,37 +2,45 @@ setup = function() {
     size(400, 400);
 };
 
-var answer = 2;
+var answer = 1;
 
 
 draw = function(){
   background(100,100,100);
   fill(0, 0, 0);
   ellipse(200, 200, 375, 375);
-  fill(60, 0, 255);
+  fill(0, 255, 0);
   triangle(200, 104, 280, 280, 120, 280);
-  fill(255, 255, 255);
+  fill(0, 0, 0);
   
   if (answer == 1) {
-    text("Your ", 176, 200);
-    text("MESSAGE", 159, 229); 
+    text("Yes! ", 176, 200);
   };
 
   if (answer == 2) {
-  background(100,100,100);
-  fill(50, 20, 300);
-  ellipse(200, 200, 375, 375);
-  fill(128, 0, 128);
-  triangle(200, 104, 280, 280, 120, 280);
-  fill(255, 255, 255);
-  text("IT IS IN", 176, 200);
-  text("THE STARS", 159, 229)
-  }
-  
+    text("Of Course! ", 176, 200);
+  };
+
+  if (answer == 3) {
+    text("Yessir ", 176, 200);
+  };
+
+  if (answer == 4) {
+    text("Obviously! ", 176, 200);
+  };
+
+  if (answer == 5) {
+    text("For Sure! ", 176, 200);
+  };
+
+  if (answer == 6) {
+    text("Why not! ", 176, 200);
+  };
+
 };
 
 mouseClicked = function(){
-  answer = round(random(1, 5));
+  answer = round(random(1, 6));
 };
 
 
